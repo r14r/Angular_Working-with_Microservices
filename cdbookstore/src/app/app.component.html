@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>CDBookStore</h3>
+    </div>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a [routerLink]="['/home']">
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+        <a [routerLink]="['/about']">
+          <i class="fas fa-briefcase"></i>
+          About
+        </a>
+        <a [routerLink]="['/str']">
+          <i class="fas fa-store"></i>
+          Store
+        </a>
+        <a [routerLink]="['/inv']">
+          <i class="fas fa-chart-bar"></i>
+          Inventory
+        </a>
+        <a [routerLink]="['/gen']">
+          <i class="fas fa-cogs"></i>
+          Generator
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
